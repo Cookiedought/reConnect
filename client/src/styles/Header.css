@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  padding: 0% 2% 0% 0%;
+  background-color: #f7f7f7;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+header img {
+  width: 30%;
+  margin: 2% 0 0 0;
+}
+
+header h1 {
+  font-family: "Rufina", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+header .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.bouton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bouton:hover {
+  background-color: #6a8e66;
+}
+
+.home {
+  background-color: #6a8e66;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.echanges {
+  background-color: #6a8e66;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.home:hover {
+  background-color: #bfd0c1;
+}
+
+.echanges:hover {
+  background-color: #bfd0c1;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 1rem 2%;
+  }
+
+  header img {
+    width: 50%;
+    margin: 0;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  header .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  header .nav-links h2 {
+    font-size: 1rem;
+  }
+}
